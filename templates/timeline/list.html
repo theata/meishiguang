@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+    <head>
+        <title> {{ timeline.id }} </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <p> {{ timeline.title }} </p>
+        <p> {{ timeline.summary }} </p>
+        
+        <button type="button" class="btn-default" id="new-event">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+
+        <div id="event-list">
+        </div>
+
+        <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/js/event.js"></script>
+    </body>
+</html>
